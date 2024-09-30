@@ -1,0 +1,27 @@
+@charset "UTF-8";
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    text-align: center;
+}
+
+.container {
+    background-color: steelblue;
+    width: 400px;
+    height: 730px;
+    border-radius: 20px;
+    margin: auto;
+}
+
+form {
+    margin-left: 10px;
+    color: white;
+    padding: 10px;
+}
+
+.buttons {
+    text-align: center;
+}

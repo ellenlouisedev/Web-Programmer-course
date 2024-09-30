@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-Br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <style>
+        table {
+            border-collapse: collapse;
+        }
+    </style>
+</head>
+<body>
+    <table border="1px solid black" align="center">
+        <thead>
+            <tr>
+                <th colspan="2">Login</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Usuário</td>
+                <td><input type="text"></td>
+            </tr>
+            <tr>             
+            </tr>
+                <td>Senha</td>
+                <td><input type="password"></td>
+            </tr>
+            <tr>
+                <td>Perfil</td>
+                <td>
+                    <select name="perfil" id="iperfil">
+                        <option value="">Usuário</option>
+                        <option width="100%" value="">Administrador</option>
+                        <option value="">Hacker</option>
+                    </select>
+                </td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="2" align="center">
+                    <input type="submit" value="Enviar">
+                    <input type="reset" value="Limpar">
+                </td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>

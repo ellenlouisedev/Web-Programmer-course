@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fildset</title>
+    <style>
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        
+        table {
+            border-collapse: collapse;
+        }
+
+        td {
+            border: 0px solid black;
+        }
+    </style>
+</head>
+<body>
+    <form action="" method="get" autocomplete="on">
+        <fieldset>
+            <legend>Dados pessoais</legend>
+            <table>
+                <tr>
+                    <td><label for="inome">Nome:</label></td>
+                    <td>
+                        <input type="text" name="nome" id="inome" maxlength="20" minlength="5" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="iidade">Idade:</label></td>
+                    <td>
+                        <input type="number" name="idade" id="iidade" min="0" max="120" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="idata">Data de nascimento: </label></td>
+                    <td>
+                        <input type="date" name="nasc" id="inasc">
+                    </td>
+                </tr>
+            </table>
+        </fieldset>
+        <fieldset>
+            <legend>Dados profissionais</legend>
+            <table>
+                <tr>
+                    <td><label for="iesc">Escolaridade</label></td>
+                    <td>
+                        <select name="esc" id="iesc">
+                            <option style="text-align: center;" value="" selected>--- Escolha ---</option>
+                            <option value="ef">Ensino fundamental incompleto</option>
+                            <option value="ef">Ensino fundamental completo</option>
+                            <option value="em">Ensino médio incompleto</option>
+                            <option value="em">Ensino médio completo</option>
+                            <option value="es">Ensino superior incompleto</option>
+                            <option value="es">Ensino superior completo</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="iemail">E-mail</label></td>
+                    <td>
+                        <input type="email" name="email" id="iemail">
+                    </td>
+                </tr> 
+                <tr>
+                    <td><label for="iexp">Tem experiência em TI</label></td>
+                    <td>
+                        <input type="radio" name="exp" id="iexp">Sim <br>
+                        <input type="radio" name="exp" id="iexp">Não
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="idisp">Disponibilidade</label></td>                  
+                    <td>
+                        <input type="checkbox" name="disp" id="idisp">Manhã <br>
+                        <input type="checkbox" name="disp" id="idisp">Tarde <br>
+                        <input type="checkbox" name="disp" id="idisp">Noite
+                    </td>                   
+                </tr>            
+            </table>
+        </fieldset>
+            <table>
+                <tr>
+                    <td><input type="submit" value="Enviar"></td>
+                    <td><input type="reset" value="Limpar"></td>
+                </tr>
+            </table>       
+    </form>
+</body>
+</html>
