@@ -1,0 +1,102 @@
+@charset "UTF-8";
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f6fdff;
+}
+
+header {
+    background-color: rgb(23, 121, 248);
+    color: rgb(255, 255, 255);
+    width: 100vw;
+    position: relative;
+    padding: 10px;
+    margin-top: -20px;
+    margin-left: -8px;
+}
+
+.imagens {
+    width: 300px;
+    position: relative;
+    left: 300px;
+}
+
+nav > a {
+    padding: 10px;
+    text-decoration: none;
+    color: white;
+    border-radius: 10px;
+}
+
+a:hover {
+    background-color: #53b3d6;
+    transition: .5s;
+}
+
+main {
+    width: 1000px;
+    margin: auto;
+    margin-top: -16px;
+    background-color: #eaf7fd;
+}
+
+button > a {
+    text-decoration: none;
+    color: white;
+}
+
+button {
+    display: inline-block;
+    
+    background-color: rgb(42, 189, 98);
+    border: none;
+    padding: 10px;
+}
+
+h2 {
+    text-align: center;
+    padding: 10px;
+}
+
+td, th {
+    border: 1px solid black;
+    text-align: center;
+}
+
+table {
+    background-color: white;
+    border-collapse: collapse;
+    margin: auto;
+}
+
+p {
+    line-height: 1em;
+    margin-left: -30px
+}
+
+.pcadastro {
+    margin-top: 30px;
+    
+}
+
+.container-form {
+    background-color: rgb(255, 255, 255);
+    border: 1px solid black;
+    border-radius: 10px;
+    width: 300px;
+    height: 280px;
+    margin: auto;
+    position: relative;
+    top: 20px;
+    text-align: center;
+}
+
+.botao {
+    position: absolute;
+    left: 50px;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    border: none;
+    padding: 10px;
+    width: 200px;
+}
