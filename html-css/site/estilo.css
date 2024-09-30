@@ -1,11 +1,5 @@
 @charset "UTF-8";
 
-:root {
-    --cor01: #1b9fcf;
-    --cor02: ;
-    --cor03: ;
-}
-
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color: #f6fdff;
