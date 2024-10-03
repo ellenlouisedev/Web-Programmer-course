@@ -15,11 +15,18 @@ header {
     background-color: #7C5E99;
 }
 
-nav {
-    text-align: right;
+header > img{
+    width: 100px;
+    height: 100px;
 }
 
-a {
+nav {
+    text-align: right;
+    padding: 20px;
+}
+
+a {   
+    
     font-family: monospace;
     font-size: 2em;
     color: white;
@@ -30,7 +37,6 @@ a {
 button {
     display: inline-block;
     background-color: #F25A70;
-    width: 220px;
     height: 60px;
     box-shadow: 2px 2px 0px black;
     border: none;
@@ -42,8 +48,8 @@ button > a {
 
 main > img {
     margin-top: 10px;
-    width: 100vw;
-    height: 800px;
+    width: 1440px;
+    height: 797px;
 }
 
 div {

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro Funcionária</title>
+</head>
+<body>
+    <form action="cadastro.php">
+        <div>
+            <label for="nome">Nome:</label>
+            <input type="text" name="nome">
+        </div>
+        <div>
+            <label for="rg">RG: </label>
+            <input type="number" name="rg">
+            <label for="cpf">CPF: </label>
+            <input type="number" name="cpf">
+        </div>
+        <div>
+            <label for="tele1">Telefone (WhatsApp)</label>
+            <input type="tel" name="tele1">
+            <label for="tele2">Telefone 2:</label>
+            <input type="tel" name="tele2">
+        </div>
+        <div>
+            <label for="dnsc">Data de nascimanto: </label>
+            <input type="date" name="dnsc">
+            <label for="ntr">Naturalidade: </label>
+            <select name="ntr">
+                <option value="">--- Escolha ---</option>
+            </select>
+        </div>
+    </form>
+</body>
+</html>

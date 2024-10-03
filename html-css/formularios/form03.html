@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro Funcionária</title>
+    <link rel="stylesheet" href="form03.css">
+</head>
+<body>
+    <div>
+        <form action="cadastro.php" method="get" autocomplete="on">
+            <h2>Cadastro de Funcionária</h2>
+            <fieldset>
+                <legend>Dados Pessoais</legend>
+                <table>
+                    <tr>
+                        <td><label for="">Nome:</label></td>
+                        <td colspan="3" >
+                            <input type="text" name="nome" minlength="5" maxlength="20" autofocus placeholder="Escreva seu nome aqui" required>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label for="rg">RG:</label></td>
+                        <td><input type="text" name="rg" placeholder="XXXXXXXXXXX-X" required></td>
+                        <td><label for="cpf">CPF:</label></td>
+                        <td><input type="text" name="cpf" placeholder="XXX.XXX.XXX-XX" required></td>
+                    </tr>
+                    <tr>
+                        <td><label for="tele1">Telefone (WhatsApp):</label></td>
+                        <td><input type="tel" name="tele1" placeholder="(XX)XXXX-XXXX" required></td>
+                        <td><label for="tele2">Telefone 2:</label></td>
+                        <td><input type="tel" name="tele2" placeholder="(XX)XXXX-XXXX" required></td>
+                    </tr>
+                    <tr>
+                        <td><label for="dnsc">Data de nascimento:</label></td>
+                        <td><input type="date" name="dnsc" required></td>
+                        <td><label for="ntr">Naturalidade:</label></td>
+                        <td><input type="text" name="ntr" value="Brasileira" required></td>
+                    </tr>
+                    <tr>
+                        <td><label for="escol">Escolaridade:</label></td>
+                        <td>
+                            <select name="escol" required>
+                                <option style="text-align: center;" selected>--- Escolha ---</option>
+                                <option value="A">Alfabetizada</option>
+                                <option value="F'">Fundamental</option>
+                                <option value="MC">Médio Completo</option>
+                                <option value="SC">Superior Completo</option>
+                            </select>
+                        </td>
+                        <td><label for="estcv">Estado Civil:</label></td>
+                        <td>
+                            <select name="estcv" required>
+                                <option style="text-align: center;" selected>--- Escolha ---</option>
+                                <option value="solteira">Solteira</option>
+                                <option value="casada">Casada</option>
+                                <option value="viuva">Viúva</option>
+                            </select>
+                        </td>
+                    </tr>
+                </table>
+            </fieldset>            
+                    <div class="botoes">                       
+                        <input class="botao" type="submit" value="Enviar">
+                        <input class="botao" type="reset" value="Limpar">                      
+                    </div>               
+        </form>
+    </div>
+</body>
+</html>
