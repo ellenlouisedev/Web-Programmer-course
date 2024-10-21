@@ -11,22 +11,43 @@
 </head>
 <body class="bg-danger">
     <div class="container card mt-5 col-sm-4 col-md-6 col-lg-3">
-        <form action="juros.php" method="post">
-            <h2 class="text-center mt-2 fw-lighter">Calculadora de juros</h2>
+        <form action="juros_simples.php" method="post">
+            <h2 class="text-center mt-2 fw-lighter">Calculadora de juros simples</h2>
             <!-- juros simples
              j = capital * taxa * tempo
              m = j + capital -->
             <div class="form-group m-3">
                 <label for="capital">Capital: </label>
-                <input class="form-control" type="number" name="capital">
+                <input class="form-control" type="number" name="capital" step=".01" min="1" placeholder="ex: 1000">
             </div>
             <div class="form-group m-3">
                 <label for="taxa">Taxa: </label>
-                <input class="form-control" type="number" name="taxa">
+                <input class="form-control" type="number" name="taxa" step=".01" min="1" placeholder="ex: 0,10">
             </div>
             <div class="form-group m-3">
                 <label for="tempo">Tempo: </label>
-                <input class="form-control" type="number" name="tempo">
+                <input class="form-control" type="number" name="tempo" step=".01" min="1" placeholder="ex: 1">
+            </div>
+            <div class="d-flex justify-content-center m-3">
+                <input class="btn btn-danger col-3" type="submit" value="Calcular">
+            </div>
+        </form>
+    </div>
+    <div class="container card mt-5 col-sm-4 col-md-6 col-lg-3">
+        <form action="juros_composto.php" method="post">
+            <h2 class="text-center mt-2 fw-lighter">Calculadora de juros compostos</h2>
+            <!-- m = c * (1 + i) ^ t -->
+            <div class="form-group m-3">
+                <label for="capital">Capital: </label>
+                <input class="form-control" type="number" name="capital" step=".01" min="100" placeholder="ex: 1000">
+            </div>
+            <div class="form-group m-3">
+                <label for="taxa">Taxa: </label>
+                <input class="form-control" type="number" name="taxa" step=".01" min="0" placeholder="ex: 0,10">
+            </div>
+            <div class="form-group m-3">
+                <label for="tempo">Tempo: </label>
+                <input class="form-control" type="number" name="tempo" step=".01" min="1" placeholder="ex: 1">
             </div>
             <div class="d-flex justify-content-center m-3">
                 <input class="btn btn-danger col-3" type="submit" value="Calcular">
