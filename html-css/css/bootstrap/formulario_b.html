@@ -4,17 +4,37 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulário Bootstrap</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css" integrity="sha512-jnSuA4Ss2PkkikSOLtYs8BlYIeeIK1h99ty4YfvRPAlzr377vr3CXDb7sb7eEEBYjDtcYj+AjBH3FLv5uSJuXg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 </head>
-<body>
-    <nav class="navbar bg-info p-0">
+<body class="bg-dark">
+    <nav class="navbar bg-light navbar-expand-lg p-0">
         <div class="container-fluid p-0">
             <a class="navbar-brand p-0" href="#">
-                <img src="imagens/logo-senac.png" alt="Logo" style="width: 82px; height: 80px;">
+                <img src="imagens/logo-senac.png" alt="Logo" style="width: 100px; height: 100px;">
             </a>
+            <button class="navbar-toggler" type="button" 
+            data-toggle="collapse" 
+            data-target="#navbarMenu"
+                aria-controls="navbarMenu"
+                aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarMenu">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Serviços</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Planos</a>
+                </li>
+            </ul>
+            </div>
         </div>
     </nav>
     <div class="container card mt-5">
@@ -32,7 +52,7 @@
                 <input class="form-check-input" type="checkbox" name="permissão">
                 <label class="form-check-label" for="permissão">Concordar em receber emails</label>
             </div>
-            <button class="btn btn-info mb-2" type="submit">Enviar</button>
+            <button class="btn btn-primary mb-2" type="submit">Enviar</button>
         </form>
     </div>
 </body>
