@@ -17,7 +17,7 @@
     $data_nascimento = $_POST["dnasc"];
     
     # CONEXÃO COM BANCOS DE DADOS
-    # $conn = new MySQli('localhost','usuario','senha','bando de dados');
+    # $conn = new MySQli('localhost','usuario','senha','banco de dados');
     $conn = new MySQli('localhost','root','','bd_senac');
     
     if($conn->connect_error){
